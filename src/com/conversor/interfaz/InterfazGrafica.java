@@ -8,6 +8,8 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class InterfazGrafica extends JFrame {
 
@@ -52,8 +54,9 @@ public class InterfazGrafica extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("CONVERSOR");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel.setBounds(157, 37, 111, 24);
+		lblNewLabel.setForeground(new Color(85, 85, 85));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblNewLabel.setBounds(157, 37, 127, 24);
 		panel_1.add(lblNewLabel);
 		
 		JButton btnMonedas = new JButton("Monedas");
@@ -79,8 +82,10 @@ public class InterfazGrafica extends JFrame {
 		btnTemperatura.setBounds(241, 87, 161, 100);
 		panel_1.add(btnTemperatura);
 		
-		/*JButton btnDistancias = new JButton("Distancias");
-		btnDistancias.setBounds(290, 87, 116, 100);
-		panel_1.add(btnDistancias);*/
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon(InterfazGrafica.class.getResource("/com/conversor/imagenes/blue-dark.jpg")));
+		lblNewLabel_1.setBounds(0, 0, 434, 261);
+		panel_1.add(lblNewLabel_1);
+		
 	}
 }
